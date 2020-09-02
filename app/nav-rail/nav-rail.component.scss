@@ -1,0 +1,42 @@
+:host {
+  .icon-toolbar {
+    height: 48px;
+  }
+  td-layout::ng-deep {
+    > mat-sidenav-container > .td-layout-sidenav {
+      > .mat-drawer-inner-container {
+        overflow-x: hidden;
+      }
+      transition: all 0.1s ease-in;
+    }
+  }
+  .rail-closed {
+    width: 72px;
+
+    .collapsed-logo {
+      height: 40px;
+      width: 40px;
+    }
+
+    mat-divider {
+      margin: 8px 24px;
+      width: 24px;
+    }
+
+    td-notification-count {
+      transform: translateX(3px);
+    }
+    ::ng-deep {
+      .mat-list-base .mat-list-item .mat-list-item-content,
+      .mat-list-base .mat-list-option .mat-list-item-content {
+          padding: 0;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+      }
+    }
+  }
+  .rail-open {
+    width: 256px;
+  }
+}
